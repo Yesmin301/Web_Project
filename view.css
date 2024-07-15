@@ -7,5 +7,23 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Segoe UI';
+    font-family:"Mynerve", cursive;
+
+}
+.navbar{
+    background-color:rgba(129, 124, 124, 0.731);
+}
+.container-one{
+    color:white;
+    display:flex;
+    font-family: "Shadows Into Light",cursive;
+    
+}
+.example-img{
+    width:150px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left:80px;
+
 }
