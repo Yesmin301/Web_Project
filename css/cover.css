@@ -5,10 +5,7 @@ body {
     text-align: center;
     margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.498);
-    background-image: url('Logos/logogif.mp4');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+   
 }
 
 .container {
