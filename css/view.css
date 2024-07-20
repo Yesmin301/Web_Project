@@ -1,9 +1,9 @@
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 100%;
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Mynerve", cursive;
 }
 
@@ -35,7 +35,7 @@ body {
     height: 600px; /* Set a fixed height */
     width: 600px; /* Set a fixed width */
     border-radius: 120px; /* Default radius */
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .container-one {
@@ -43,7 +43,11 @@ body {
 }
 
 .container-two {
-    background-color: #edf4f2a7; /* Specific color for container-two */
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
+.container-three {
+    background-color: #edf4f2f6; /* Specific color for container-two */
     border-radius: 140px; /* Specific radius for container-two */
 }
 
