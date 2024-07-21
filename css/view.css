@@ -25,7 +25,7 @@ body {
     gap: 20px; /* Adds space between the containers */
 }
 
-.container-one, .container-two {
+.container-one, .container-five,.container-six,.container-seven,.container-eight {
     text-align: center;
     padding: 20px;
     display: flex;
@@ -37,6 +37,19 @@ body {
     border-radius: 120px; /* Default radius */
     color: rgb(0, 0, 0);
 }
+.container-two{
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 800px; /* Set a fixed height */
+    width: 800px; /* Set a fixed width */
+    border-radius:0px; /* Default radius */
+    color: rgb(0, 0, 0);
+    margin-top: -80px;
+}
 
 .container-one {
     background-color: #7c8363; /* Specific color for container-one */
@@ -46,15 +59,33 @@ body {
     background-color: #edf4f2f6; /* Specific color for container-two */
     border-radius: 140px; /* Specific radius for container-two */
 }
-.container-three {
+
+.container-five {
     background-color: #edf4f2f6; /* Specific color for container-two */
     border-radius: 140px; /* Specific radius for container-two */
 }
-
+.container-six {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
+.container-seven {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
+.container-eight {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
 .example-img, .example-imgtwo {
     max-width: 100%; /* Ensure the image does not exceed container width */
     height: auto; /* Maintain aspect ratio */
     width: 60%; /* Set the image width to 60% of the container */
+
+}
+.carousel-item{
+    border-radius: 200px;
+    width: 400px;
+    height: 600px;
 }
 
 header nav ul {
