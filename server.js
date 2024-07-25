@@ -1,7 +1,9 @@
+const mongo = require('mongoose')
 const express = require('express');
-const bodyParse = require('body-parser');
-const mongooose = require('mongoose');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const route = require('./route/pages')
+//const path = require('path')
 const app = express();
 
 app.set('view engine', 'ejs');
