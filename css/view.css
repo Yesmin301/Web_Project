@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(129, 124, 124, 0.731);
+    background-color: dark;
 }
 
 .container-wrapper {
@@ -25,8 +25,7 @@ body {
     gap: 20px; /* Adds space between the containers */
 }
 
-/* Common styles for container 1 and 3 */
-.container-common {
+.container-one, .container-five,.container-six,.container-seven,.container-eight {
     text-align: center;
     padding: 20px;
     display: flex;
@@ -35,52 +34,59 @@ body {
     align-items: center; /* Center content horizontally */
     height: 600px; /* Set a fixed height */
     width: 600px; /* Set a fixed width */
-    border-radius: 0px; /* Default radius */
+    border-radius: 120px; /* Default radius */
     color: rgb(0, 0, 0);
-    background-color: #7c8363; /* Specific color for container-one and container-three */
-    margin: 20px; /* Add margin to create white space */
 }
-
-.container-two {
+.container-two{
     text-align: center;
     padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: auto; /* Allow the width to adjust based on content */
-    max-width: 100%; /* Ensure the container does not exceed the viewport width */
-    color: rgb(0, 0, 0);
-    margin-top: -60px;
-    background-color: #edf4f2f6; /* Specific color for container-two */
-    border-radius: 0px; /* Specific radius for container-two */
-}
-
-.container-four, .container-five {
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
     height: 600px; /* Set a fixed height */
-    width: 600px; /* Set a fixed width */
-    border-radius: 0px; /* Default radius */
+    width: 800px; /* Set a fixed width */
+    border-radius:0px; /* Default radius */
     color: rgb(0, 0, 0);
-    background-color: #edf4f2f6; /* Specific color for container-four and container-five */
+    margin-top: -80px;
 }
 
-/* Ensure images fit within the container */
+.container-one {
+    background-color: #7c8363; /* Specific color for container-one */
+}
+
+.container-two {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 150px; /* Specific radius for container-two */
+}
+
+.container-five {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
+.container-six {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
+.container-seven {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
+.container-eight {
+    background-color: #edf4f2f6; /* Specific color for container-two */
+    border-radius: 140px; /* Specific radius for container-two */
+}
 .example-img, .example-imgtwo {
     max-width: 100%; /* Ensure the image does not exceed container width */
     height: auto; /* Maintain aspect ratio */
-    width: auto; /* Allow width to adjust based on content */
-}
+    width: 60%; /* Set the image width to 60% of the container */
 
-.carousel-item {
+}
+.carousel-item{
+	align-content: center;
     border-radius: 200px;
     width: 400px;
-    height: 600px;
+    height: 400px;
 }
 
 header nav ul {
@@ -96,4 +102,68 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+}
+.hero-image-1 {
+    background-image: url("C:/Users/miiss/Downloads/Web_Project-main/Logos/nikewlogo.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-image-2 {
+    background-image: url("C:/Users/miiss/Downloads/Web_Project-main/Logos/adidaswlogo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-image-3 {
+    background-image: url("C:/Users/miiss/Downloads/Web_Project-main/Logos/uniqlo-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-image-4 {
+    background-image: url("C:/Users/miiss/Downloads/Web_Project-main/Logos/handm-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+.card-body {
+    text-align: center;
+}
+.add-to-cart {
+    margin-top: 30px;
+}
+button{
+    color: grey;
 }

@@ -1,0 +1,12 @@
+.hero-image {
+    background-image: url("/Logos/nikewlogo.png"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
