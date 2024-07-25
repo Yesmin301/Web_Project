@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>NIKE</title>
+	<link rel="icon" type="image/x-icon" href="images/paw.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -12,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">CAT-A-LOG</a>
+            <a class="navbar-brand" href="index.html">CAT-A-LOG</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,7 +30,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="catalog.html#men">Men</a></li>
                             <li><a class="dropdown-item" href="catalog.html#women">Women</a></li>
-                            <li><a class="dropdown-item" href="catalog.html#kids">Kids</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -41,11 +42,52 @@
             </div>
         </div>
     </nav>
-    
+	<!-- Hero Section -->
+    <div class="hero-image-1">
+	</div>
     <main>
-        <h1>About Us</h1>
-        <p>Learn more about us here.</p>
+		<div class="container">
+			<div class="row">
+        <!-- Product Item -->
+				<div class="col-md-4">
+					<div class="card">
+						<img src="products/5_Short.png" class="card-img-top" alt="Product Name">
+						<div class="card-body">
+							<h5 class="card-title">Nike Club Shorts</h5>
+							<p class="card-text">Retail Price: <span class="text-muted">$45</span></p>
+							<p class="card-text">Resell Price: <span class="text-success">$30-45</span></p>
+							<button class="btn btn-primary add-to-cart" data-product-id="3">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+        <!-- Product Item -->
+				<div class="col-md-4">
+					<div class="card">
+						<img src="products/2_air_max__97.png" class="card-img-top" alt="Product Name">
+						<div class="card-body">
+							<h5 class="card-title">Nike Air Max 97</h5>
+							<p class="card-text">Retail Price: <span class="text-muted">$175</span></p>
+							<p class="card-text">Resell Price: <span class="text-success">$170-190</span></p>
+							<button class="btn btn-primary add-to-cart" data-product-id="2">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+		<!-- Product Item -->
+				<div class="col-md-4">
+					<div class="card">
+						<img src="products/4_Wolf_Grey.jpg" class="card-img-top" alt="Product Name">
+						<div class="card-body">
+							<h5 class="card-title">Air Jordan 1 Low OG “Wolf Grey”</h5>
+							<p class="card-text">Retail Price: <span class="text-muted">$140</span></p>
+							<p class="card-text">Resell Price: <span class="text-success">$140-160</span></p>
+							<button class="btn btn-primary add-to-cart" data-product-id="1">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

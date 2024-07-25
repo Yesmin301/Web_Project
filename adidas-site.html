@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Adidas</title>
+	<link rel="icon" type="image/x-icon" href="images/paw.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/view.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">CAT-A-LOG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="catalog.html#men">Men</a></li>
+                            <li><a class="dropdown-item" href="catalog.html#women">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<!-- Hero Section -->
+    <div class="hero-image-2">
+	</div>
+    <main>
+		<div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <% products.forEach(product => { %>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="<%= product.image %>" class="card-img-top" alt="<%= product.name %>">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%= product.name %></h5>
+                                    <p class="card-text">Retail Price: <span class="text-muted"><%= product.retailPrice %></span></p>
+                                    <p class="card-text">Resell Price: <span class="text-success"><%= product.resellPrice %></span></p>
+                                    <button class="btn btn-primary add-to-cart" data-product-id="<%= product.id %>">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row">
+                        <!-- Product Item -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="path/to/product-image.jpg" class="card-img-top" alt="Product Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text">Retail Price: <span class="text-muted">$100.00</span></p>
+                                    <p class="card-text">Resell Price: <span class="text-success">$80.00</span></p>
+                                    <button class="btn btn-primary add-to-cart" data-product-id="1">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat for more products -->
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Product Item -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="path/to/product-image.jpg" class="card-img-top" alt="Product Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text">Retail Price: <span class="text-muted">$100.00</span></p>
+                                    <p class="card-text">Resell Price: <span class="text-success">$80.00</span></p>
+                                    <button class="btn btn-primary add-to-cart" data-product-id="1">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat for more products -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to handle adding items to the cart
+            function addToCart(productId) {
+                // For demonstration, we'll just log the product ID
+                console.log('Product added to cart:', productId);
+    
+                // Here you would typically make an AJAX request to your server
+                // to add the item to the user's cart
+            }
+    
+            // Add event listener to all "Add to Cart" buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    addToCart(productId);
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
