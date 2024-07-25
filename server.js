@@ -8,9 +8,11 @@ app.set('view engine', 'ejs');
 app.use(bodyParse.urlencoded({extended: true}));
 app.use('/', route);
 
-mongooose.connect("",{userNewURLParser: true, useUnifiedTopology: true})
-.then(()=>{
-    app.listen(3000,() =>{
-        console.log("server is running on 3000")
+mongoose.connect("mongodb+srv://yesminh:ba1lkW6l7Ap58qkJ@cluster0.zu09zdf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+    
+})
+.then(() => {
+    app.listen(3000, () => {
+        console.log("Server is running on port 3000");
     })
 })
